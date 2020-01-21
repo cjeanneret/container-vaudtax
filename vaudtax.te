@@ -1,0 +1,13 @@
+module vaudtax 1.0;
+
+require {
+	type user_tmp_t;
+	type xserver_t;
+	type container_t;
+	class sock_file write;
+	class unix_stream_socket connectto;
+}
+
+#============= container_t ==============
+allow container_t user_tmp_t:sock_file write;
+allow container_t xserver_t:unix_stream_socket connectto;
