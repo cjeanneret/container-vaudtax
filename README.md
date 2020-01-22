@@ -1,6 +1,7 @@
 # Run VaudTax in a container
 ## Prerequists
 - podman
+- buildah
 
 ## How to use
 Just clone this repository, ensure you have the prerequists, and run:
